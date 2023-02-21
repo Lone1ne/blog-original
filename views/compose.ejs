@@ -1,0 +1,22 @@
+
+
+<%- include("partials/header") -%>
+<!-- this header needs to match the ejs file name header -->
+  <div class="box" id="heading">
+    <h1>Compose</h1>
+  </div>
+
+  <div class="box">
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <label for="">Title</label>
+        <input class="form-control" type="text" name="postTitle">
+        <label for="">Post</label>
+        <textarea class="form-control text-truncate" name="postBody" rows="8" cols="80"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Publish</button>
+    </form>
+  </div>
+
+
+<%- include("partials/footer") -%>
